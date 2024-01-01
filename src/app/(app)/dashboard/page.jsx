@@ -1,5 +1,5 @@
 export const metadata = {
-    title: 'Laravel - Dashboard',
+    title: 'Link Minimizer - Dashboard',
 }
 
 const Dashboard = () => {

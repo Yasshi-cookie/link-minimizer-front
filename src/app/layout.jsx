@@ -1,11 +1,11 @@
 import '@/app/global.css'
 
 export const metadata = {
-    title: 'Laravel',
+    title: 'Link Minimizer',
 }
 const RootLayout = ({ children }) => {
     return (
-        <html lang="en">
+        <html lang="ja">
             <body className="antialiased">{children}</body>
         </html>
     )
