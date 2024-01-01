@@ -3,10 +3,7 @@ import axios from '@/lib/axios'
 import { useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 
-export const useAuth = ({
-    middleware,
-    redirectIfAuthenticated = null,
-} = {}) => {
+export const useAuth = ({ middleware, redirectIfAuthenticated } = {}) => {
     const router = useRouter()
     const params = useParams()
 
