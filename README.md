@@ -23,14 +23,9 @@ $ find src/ -type f -name '*.js' -exec rename 's/\.js$/.jsx/' {} +
 補足：`{}`はfindによって見つかったファイル名に置き換えられます。`+`は見つかったすべてのファイルに対してコマンドを一度に実行することを意味します。
 
 ## ⑤Playwrightの設定
-・VSCodeの拡張機能「ms-playwright.playwright」をインストールします。
-・[公式ドキュメント](https://playwright.dev/docs/intro)を参考にしてplaywightをインストールします。
-・Playwrightの設定：参考 → https://github.com/Yasshi-cookie/link-minimizer-front/commit/ec680bb917bb24bc0d7808d22f82c2bf8d12412d
-
-### Tips
-- data-testidは使うべきか？
-  - https://future-architect.github.io/articles/20231128a/
-
+- VSCodeの拡張機能「ms-playwright.playwright」をインストールします。
+- [公式ドキュメント](https://playwright.dev/docs/intro)を参考にしてplaywightをインストールします。
+- Playwrightの設定：参考 → https://github.com/Yasshi-cookie/link-minimizer-front/commit/ec680bb917bb24bc0d7808d22f82c2bf8d12412d
 
 # Playwrightの使い方
 ## テストの実行&テストレポートの出力
@@ -55,7 +50,13 @@ $ npx playwright test --debug
 ```
 
 ## テストコード自動生成機能（CodeGen）
+```bash
+$ npx playwright codegen
+```
 
 ## Tips
 ### 指定したテストコードだけ実行したい
 https://playwright.dev/docs/api/class-test#test-only
+
+### data-testidは使うべきか？
+https://future-architect.github.io/articles/20231128a/
