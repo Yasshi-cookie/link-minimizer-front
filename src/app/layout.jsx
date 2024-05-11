@@ -1,7 +1,7 @@
 import '@/app/global.css'
 
 export const metadata = {
-    title: 'Link Minimizer',
+    title: 'URLカンタン短縮',
 }
 const RootLayout = ({ children }) => {
     return (

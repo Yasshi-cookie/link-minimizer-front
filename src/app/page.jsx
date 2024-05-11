@@ -1,7 +1,7 @@
 import LoginLinks from '@/app/LoginLinks'
 
 export const metadata = {
-    title: 'Link Minimizer',
+    title: 'URLカンタン短縮',
 }
 
 const Home = () => {
