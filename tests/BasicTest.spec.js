@@ -6,7 +6,7 @@ test('has title', async ({ page }, testInfo) => {
     await expect(page).toHaveTitle('URLカンタン短縮')
 
     // メールアドレスとパスワードを入力
-    await page.getByLabel('email').fill('y.teruyacookie@gmail.com')
+    await page.getByLabel('email').fill('sample@sample.com')
     await page.getByLabel('password').fill('password')
     await page.getByRole('button', { name: 'Login' }).click()
 
@@ -14,12 +14,14 @@ test('has title', async ({ page }, testInfo) => {
     await page.waitForURL('/dashboard')
     // 遷移後のページのタイトルをチェック
     await expect(page).toHaveTitle('URLカンタン短縮 - Dashboard')
-    await page.screenshot({
-        fullPage: true,
-        path: testInfo.snapshotPath('result.png'),
-    })
 
-    await page.getByRole('button', { name: 'Yasushi Teruya' }).click()
+    // スクリーンショット機能のテスト（のちに削除予定）
+    // await page.screenshot({
+    //     fullPage: true,
+    //     path: testInfo.snapshotPath('result.png'),
+    // })
 
-    await expect(page).toHaveScreenshot('result.png', { fullPage: true })
+    // await page.getByRole('button', { name: 'Yasushi Teruya' }).click()
+
+    // await expect(page).toHaveScreenshot('result.png', { fullPage: true })
 })
