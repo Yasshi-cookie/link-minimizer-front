@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test')
 
 test('has title', async ({ page }, testInfo) => {
     await page.goto('/login')
-    await expect(page).toHaveTitle('Link Minimizer')
+    await expect(page).toHaveTitle('URLカンタン短縮')
 
     // メールアドレスとパスワードを入力
     await page.getByLabel('email').fill('y.teruyacookie@gmail.com')
@@ -13,7 +13,7 @@ test('has title', async ({ page }, testInfo) => {
     // ページ遷移するまで待つ
     await page.waitForURL('/dashboard')
     // 遷移後のページのタイトルをチェック
-    await expect(page).toHaveTitle('Link Minimizer - Dashboard')
+    await expect(page).toHaveTitle('URLカンタン短縮 - Dashboard')
     await page.screenshot({
         fullPage: true,
         path: testInfo.snapshotPath('result.png'),

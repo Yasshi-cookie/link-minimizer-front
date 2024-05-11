@@ -1,5 +1,5 @@
 export const metadata = {
-    title: 'Link Minimizer - Dashboard',
+    title: 'URLカンタン短縮 - Dashboard',
 }
 
 const Dashboard = () => {

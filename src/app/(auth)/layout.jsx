@@ -3,7 +3,7 @@ import AuthCard from '@/app/(auth)/AuthCard'
 import ApplicationLogo from '@/components/ApplicationLogo'
 
 export const metadata = {
-    title: 'Link Minimizer',
+    title: 'URLカンタン短縮',
 }
 
 const Layout = ({ children }) => {
